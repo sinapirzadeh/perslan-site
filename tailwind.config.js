@@ -4,6 +4,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        Vazir: ['Vazir', 'sans-serif'],
+      }
     },
   },
   plugins: [

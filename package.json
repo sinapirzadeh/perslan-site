@@ -2,6 +2,9 @@
   "devDependencies": {
     "tailwindcss": "^3.4.9"
   },
+  "scripts": {
+    "dev": "tailwindcss build ./src/assets/css/input.css -o ./src/assets/css/output.css --watch"
+  },
   "dependencies": {
     "tailwindcss-animated": "^1.1.2"
   }

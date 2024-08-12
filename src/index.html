@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="rtl" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="سایت شخصی سینا پیرزاده - برنامه نویس وب و هوش مصنوعی">
+    <link rel="shortcut icon" href="./assets/icons/logo-smpel.ico" type="image/x-icon">
     <title>سینا پیرزاده</title>
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 
-<body class="dark:bg-gray-800 bg-gray-200">
+<body class="dark:bg-gray-800 bg-gray-200 transition font-Vazir text-gray-600 bg-row">
     <header>
         <!-- send sms -->
-        <a class="hidden md:block  p-3 animate-pulse hover:animate-jump bg-blue-500 text-white fixed left-10 bottom-5 border dark:border-white rounded-full"
+        <a class="hidden md:block z-50 p-3 animate-pulse hover:animate-jump bg-blue-500 text-white fixed left-10 bottom-5 border dark:border-white rounded-full"
             href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZdkbmLbGnJfFTQMzFXxdHnhfwKmwmhbCbVKLcRgPwGFflfqNKDFzmwXdnXDdlBMXlRBLV">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6">
@@ -26,48 +28,45 @@
             rounded-3xl border-2 dark:border-gray-300 border-indigo-400 dark:bg-gray-200 bg-blue-400 px-5 py-2 ">
                 <!-- Logo -->
                 <div class="animate-fade">
-                    <img class="w-auto h-12 dark:hidden" src="./assets/images/logo.webp" alt="Logo">
+                    <img class="w-auto h-12 dark:hidden" src="./assets/images/logo.webp" alt="logo for site">
                     <img class="w-auto h-12 hidden dark:block" src="./assets/images/logo_darkMode.webp"
-                        alt="darkMode Logo">
+                        alt="dark-logo for site Logo">
                 </div>
 
                 <!-- Menu List -->
                 <ul class="flex justify-around text-lg font-semibold animate-fade">
-                    <li
-                        class="dark:text-white flex items-center px-3 py-2 rounded-md transition-all hover:text-white hover:bg-blue-400 cursor-pointer ml-2 mr-0">
+                    <li class="dark:text-white flex items-center  hover:text-blue-500 ml-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
                         </svg>
-                        <a class="pr-1" href="#skills">مهارت ها</a>
+                        <a class="pr-1 font-light" href="#skills">مهارت ها</a>
+
                     </li>
-                    <li
-                        class="dark:text-white flex items-center px-3 py-2 rounded-md transition-all hover:text-white hover:bg-blue-400 cursor-pointer ml-2 mr-0">
+                    <li class="dark:text-white flex items-center  hover:text-blue-500 ml-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
                         </svg>
-                        <a class="pr-3" href="#projects">پروژه ها</a>
+                        <a class="pr-3 font-light" href="#projects">پروژه ها</a>
                     </li>
-                    <li
-                        class="dark:text-white flex items-center px-3 py-2 rounded-md transition-all hover:text-white hover:bg-blue-400 cursor-pointer ml-2 mr-0">
+                    <li class="dark:text-white flex items-center  hover:text-blue-500 ml-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
                         </svg>
-                        <a class="pr-1" href="#blogs">مقاله ها</a>
+                        <a class="pr-1 font-light" href="#blogs">مقاله ها</a>
                     </li>
-                    <li
-                        class="dark:text-white flex items-center px-3 py-2 rounded-md transition-all hover:text-white hover:bg-blue-400 cursor-pointer ml-2 mr-0">
+                    <li class="dark:text-white flex items-center  hover:text-blue-500 ml-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                         </svg>
-                        <a class="pr-1" href="#contact">تماس با ما</a>
+                        <a class="pr-1 font-light" href="#contact">تماس با ما</a>
                     </li>
 
                 </ul>
@@ -136,7 +135,7 @@
                 </button>
 
                 <!-- send sms -->
-                <a class="p-3 z-{200} transition-all animate-pulse hover:animate-jump bg-blue-500 text-white fixed left-3 bottom-3 rounded-full"
+                <a class="p-3 z-50 transition-all animate-pulse hover:animate-jump bg-blue-500 text-white fixed left-3 bottom-3 rounded-full"
                     href="sms:+989364733583?body=پیام از طرف سایت : ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -155,7 +154,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
                             </svg>
-                            <a class="pr-3" href="#skills">مهارت ها</a>
+                            <a class="pr-3 font-light" href="#skills">مهارت ها</a>
                         </li>
                         <li
                             class="dark:text-white flex items-center px-3 py-2 rounded-lg transition-all hover:text-white hover:bg-blue-500">
@@ -164,7 +163,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
                             </svg>
-                            <a class="pr-3" href="#projects">پروژه ها</a>
+                            <a class="pr-3 font-light" href="#projects">پروژه ها</a>
                         </li>
                         <li
                             class="dark:text-white flex items-center px-3 py-2 rounded-lg transition-all hover:text-white hover:bg-blue-500 active:bg-blue-500">
@@ -173,7 +172,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
                             </svg>
-                            <a class="pr-3" href="#blogs">مقاله ها</a>
+                            <a class="pr-3 font-light" href="#blogs">مقاله ها</a>
                         </li>
                         <li
                             class="dark:text-white flex items-center px-3 py-2 rounded-lg transition-all hover:text-white hover:bg-blue-500">
@@ -182,7 +181,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                             </svg>
-                            <a class="pr-3" href="#contact">تماس با ما</a>
+                            <a class="pr-3 font-light" href="#contact">تماس با ما</a>
                         </li>
                         <div>
                             <ul class="flex mt-3">
@@ -219,7 +218,7 @@
         </div>
 
         <!-- about-us -->
-        <div id="about" class="flex items-center flex-col md:flex-row mx-8 md:mx-24 my-14">
+        <div id="about" class="z-10 flex items-center flex-col md:flex-row mx-8 md:mx-24 my-14">
             <!-- profile -->
             <div class="flex-1">
                 <!-- <img class="rounded-lg" src="./assets/images/avatar.webp" alt="profile image"> -->
@@ -299,7 +298,7 @@
             <div class="flex-1 space-y-5 md:mt-0 mt-10 md:text-start text-center">
                 <h1 class="text-4xl font-semibold dark:text-white text-blue-600">سینا پیرزاده<span> هستم</span></h1>
                 <h3 class="text-2xl dark:text-white">برنامه نویس وب و هوش مصنوعی</h3>
-                <p class="text-base dark:text-white font-bold leading-6 tracking-wide">تا به
+                <p class="text-wrap dark:text-white leading-6 tracking-wide">تا به
                     حال با زبان
                     برنامه نویسی
                     های
@@ -311,7 +310,7 @@
                 <div class="flex max-sm:hidden max-md:justify-center">
                     <div class="flex mt-3">
                         <div
-                            class="ml-5 w-10 bg-indigo-600 hover:shadow shadow-md cursor-pointer transition  rounded-full p-2 ">
+                            class="ml-5  w-10  shadow-indigo-700 bg-indigo-600 hover:shadow shadow-md cursor-pointer transition  rounded-full p-2 ">
                             <a href="https://www.linkedin.com/in/sinapirzadeh/"><img src="./assets/icons/linkedin.svg"
                                     alt="linkedin"></a>
                         </div>
@@ -342,8 +341,8 @@
 
     <main>
         <!-- skill bar -->
-        <section id="skills">
-            <div class="mx-8 md:mx-24 my-20">
+        <section id="skills" class="pt-1">
+            <div class="mx-8 md:mx-24 mt-8 mb-20 z-10">
                 <div class="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-5">
 
                     <div dir="ltr" class="bg-white dark:bg-indigo-900 rounded-lg p-5 shadow-md animate-flip-down">
@@ -478,7 +477,7 @@
 
         <!-- projects -->
         <section id="projects">
-            <div class="space-y-5">
+            <div class="space-y-5 z-10">
                 <h2 class="text-4xl dark:text-white text-center">پروژه ها</h2>
                 <p class="text-center dark:text-gray-300 text-lg">پروژه های برنامه نویسی شده و نمونه کار ها</p>
             </div>
@@ -538,8 +537,7 @@
 
         <!-- blogs -->
         <section id="blogs">
-
-            <div class="mx-5 md:mx-24 my-20">
+            <div class="mx-5 md:mx-24 my-10 z-0">
                 <!-- blog setter -->
                 <div class=" mb-16 flex justify-between">
                     <div
@@ -550,10 +548,9 @@
                                 d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
                         </svg>
                         <h2 class="pr-2 font-semibold text-xl inline-block">مقاله ها</h2>
-
                     </div>
                     <div class="hover:animate-wiggle p-2 bg-blue-500 rounded-md text-white flex">
-                        <a class="pl-3" href=" /blog">مشاهده
+                        <a class="pl-3" href="/src/blog_list.html">مشاهده
                             همه</a>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
@@ -575,19 +572,22 @@
                         </div>
                         <div class="p-6">
                             <h4
-                                class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal dark:text-white text-blue-gray-900 antialiased">
+                                class="mb-2 block font-Vazir text-lg font-semibold leading-snug tracking-normal dark:text-white text-blue-gray-900 antialiased">
                                 برنامه نویسی</h4>
                             <p
-                                class="block font-sans text-base font-light leading-relaxed text-inherit antialiased dark:text-gray-300">
+                                class="block font-Vazir text-base font-light leading-relaxed text-inherit antialiased dark:text-gray-300">
                                 برنامه نویس چگونه است و با چه زبان های باید شروع کنیم ... <a href="#"
-                                    class="text-blue-700 font-bold dark:text-blue-300">مشاهده مقاله
+                                    class="text-blue-700 hover:text-blue-500 dark:hover:text-blue-200 border-b-2 border-blue-700 dark:border-blue-300 dark:text-blue-300">مشاهده
+                                    مقاله
                                 </a></p>
-                            <div class="flex mt-3">
+                            <div class="flex mt-3 dark:text-white">
                                 <span class="flex items-center pl-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" class="size-5">
                                         <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                     </svg>
                                     <span class="pr-1">0</span>
                                 </span>
@@ -602,100 +602,112 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div
-                        class="relative m-auto flex w-80 flex-col rounded-xl  dark:bg-blue-800 bg-white bg-clip-border text-gray-700 shadow-md">
-                        <div
-                            class="relative  mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                            <img src="./assets/images/articles/2.jpg" alt="">
-                        </div>
-                        <div class="p-6">
-                            <h4
-                                class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal dark:text-white text-blue-gray-900 antialiased">
-                                برنامه نویسی</h4>
-                            <p
-                                class="block font-sans text-base font-light leading-relaxed text-inherit antialiased dark:text-gray-300">
-                                برنامه نویس چگونه است و با چه زبان های باید شروع کنیم ... <a href="#"
-                                    class="text-blue-700 font-bold dark:text-blue-300">مشاهده مقاله
-                                </a></p>
-                            <div class="flex mt-3">
-                                <span class="flex items-center pl-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                    </svg>
-                                    <span class="pr-1">0</span>
-                                </span>
-                                <span class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-                                    </svg>
-                                    <span class="pr-1">0</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div
-                        class="relative m-auto flex w-80 flex-col rounded-xl  dark:bg-blue-800 bg-white bg-clip-border text-gray-700 shadow-md">
-                        <div
-                            class="relative  mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                            <img src="./assets/images/articles/2.jpg" alt="">
-                        </div>
-                        <div class="p-6">
-                            <h4
-                                class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal dark:text-white text-blue-gray-900 antialiased">
-                                برنامه نویسی</h4>
-                            <p
-                                class="block font-sans text-base font-light leading-relaxed text-inherit antialiased dark:text-gray-300">
-                                برنامه نویس چگونه است و با چه زبان های باید شروع کنیم ... <a href="#"
-                                    class="text-blue-700 font-bold dark:text-blue-300">مشاهده مقاله
-                                </a></p>
-                            <div class="flex mt-3">
-                                <span class="flex items-center pl-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                    </svg>
-                                    <span class="pr-1">0</span>
-                                </span>
-                                <span class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-5">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-                                    </svg>
-                                    <span class="pr-1">0</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
 
                 </div>
             </div>
         </section>
 
         <!-- contact-us -->
-        <section id="contact">
-            <div class="mx-5 md:mx-24 my-20">
+        <section id="contact" class="pt-1">
+            <div class="mx-5 md:mx-24 my-20 flex-row md:flex">
+                <div class="flex-1">
+                    <div class="px-4 mx-auto animate-border">
+                        <div
+                            class="flex-row space-y-4 max-w-md mx-auto px-8 py-4 bg-gray-100 dark:bg-blue-900 dark:text-white rounded-lg shadow-lg">
+                            <div class="">
+                                <h4 class="font-bold">اطلاعات تماس</h4>
+                                <p></p>
+                            </div>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                </svg>
+                                <span dir="ltr" class="pr-2">+98 9364733583</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                </svg>
+                                <span dir="ltr" class="pr-2">sinapirzadeh1@gmail.com</span>
+                            </div>
+
+                            <div class="bg-white grid grid-cols-6 gap-2 dark:bg-blue-900  text-sm">
+                                <h5 class="text-xl font-bold col-span-6">ارسال نظر برای پروژه ها، مقالات، ...</h5>
+                                <input
+                                    class="bg-slate-200 text-slate-600 placeholder:text-slate-600 placeholder:opacity-50 border border-slate-300 col-span-6 resize-none outline-none rounded-lg p-2 duration-300 focus:border-slate-600"
+                                    type="text" placeholder="نام ">
+                                <textarea
+                                    class="bg-slate-200 text-slate-600 h-28 placeholder:text-slate-600 placeholder:opacity-50 border border-slate-300 col-span-6 resize-none outline-none rounded-lg p-2 duration-300 focus:border-slate-600"
+                                    placeholder="نظرتان را بنویسد"></textarea>
+
+                                <button
+                                    class="bg-slate-200 stroke-slate-600 border border-slate-300  rounded-lg flex justify-center items-center duration-300 hover:text-white hover:stroke-white hover:bg-blue-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M7.39999 6.32003L15.89 3.49003C19.7 2.22003 21.77 4.30003 20.51 8.11003L17.68 16.6C15.78 22.31 12.66 22.31 10.76 16.6L9.91999 14.08L7.39999 13.24C1.68999 11.34 1.68999 8.23003 7.39999 6.32003Z"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M10.11 13.6501L13.69 10.0601" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class=" px-4 mx-auto">
+                        <div class="mx-auto">
+                            <div id="contact-form"
+                                class="max-w-md mx-auto px-8 py-6 bg-gray-100 dark:bg-blue-900  rounded-lg shadow-lg">
+                                <h2 class="text-2xl font-semibold dark:text-white mb-4">با من تماس بگیرید
+                                </h2>
+                                <form>
+                                    <div class="mb-4">
+                                        <!-- <label class="block mb-1 dark:text-white" for="name">نام کامل</label> -->
+                                        <input
+                                            class="w-full px-4 py-2 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-300 transition duration-300"
+                                            placeholder="نام تان را وارد کنید" type="text" />
+                                    </div>
+                                    <div class="mb-4">
+                                        <!-- <label class="block mb-1 dark:text-white" for="email">ایمیل
+                                        </label> -->
+                                        <input
+                                            class="w-full px-4 py-2 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-300 transition duration-300"
+                                            placeholder="ایمیل تان را وارد کنید" name="email" id="email" type="email" />
+                                    </div>
+                                    <div class="mb-4">
+                                        <!-- <label class="block mb-1 dark:text-white" for="message">پیام شما</label> -->
+                                        <textarea
+                                            class="w-full px-4 py-2 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-300 transition duration-300"
+                                            rows="4" placeholder="پیام تان را وارد کنید" name="message"
+                                            id="message"></textarea>
+                                    </div>
+                                    <button onclick="contact()"
+                                        class="w-full bg-blue-400 text-white dark:bg-yellow-300 dark:text-gray-800 py-2 px-4 rounded-lg hover:bg-indigo-400 transition duration-300"
+                                        type="submit">
+                                        ارسال پیام
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="bg-gray-300 dark:bg-slate-900">
-            <p class="dark:text-white text-center py-5 font-semibold">سایت برای سینا پیرزاده محفوظ می باشد.</p>
+        <div class="bg-gray-300 text-gray-950 dark:bg-slate-900">
+            <p class="dark:text-white text-center py-5">سایت برای <a class="text-blue-600 "
+                    href="https://sinapirzadeh.ir/">سینا پیرزاده</a>
+                محفوظ می باشد.</p>
         </div>
     </footer>
 
